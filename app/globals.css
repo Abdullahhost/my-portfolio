@@ -2,32 +2,354 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Dennis Sans";
+  src: url("./assets//fonts/NeueMontreal-Regular\ \(1\).otf") format("opentype");
+  font-weight: 450;
+  font-style: normal;
+  font-display: auto;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000;
+  font-family: "Dennis Sans";
+  scroll-behavior: smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::selection {
+  background: #42fc3c;
+  mix-blend-mode: difference;
 }
+/* body,
+html {
+  background: #2e2e2e;
+  color: #e9e9e9;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .img {
+    scale: 0.7;
+    opacity: 0;
+    animation: scrollAnimation linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+  @keyframes scrollAnimation {
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.buttonWrapper {
+  display: grid;
+  place-items: center;
+}
+
+.button {
+  font-family: sans-serif;
+  color: white;
+  /* width: clamp(9em, 12vw, 11em); */
+  font-size: 16px;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  /* background-image: radial-gradient(
+    135px circle at 75% 38px,
+    rgb(255, 0, 76),
+    transparent
+  ); */
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.7s;
+}
+.parrent {
+  /* font-size: 16px; */
+  font-weight: 400;
+}
+
+.linkEffect,
+.linkEffectSide {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: #00000079;
+  /* mix-blend-mode: difference; */
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all ease-in-out 0.2s;
+  z-index: 100;
+}
+.linkEffectSide {
+  bottom: 41%;
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  transition: all ease-in-out 0.2s;
+  transform: translateY(50%), scale(0);
+  z-index: 100;
+}
+.parrent:hover .linkEffect,
+.parrent:hover .linkEffectSide {
+  transform: scale(1);
+}
+
+.test {
+  display: inline-block;
+}
+
+.test::after,
+.test::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transform: scaleY(0) scaleX(0.7);
+  background: linear-gradient(to top, rgb(53, 73, 255), rgb(63, 63, 250));
+  transform-origin: center top;
+  transition-delay: 0.4s;
+  transition: transform 0.3s ease-out;
+}
+.test::before {
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  background-color: rgb(255, 215, 196);
+  transition: transform 0.2s ease-out;
+}
+.test:hover::after,
+.test:hover::before {
+  transform: scaleY(1) scaleX(1);
+  transform-origin: center bottom;
+}
+.test:hover::before {
+  transform: scaleY(1);
+  transform-origin: center bottom;
+}
+@keyframes animateScroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes animateScroll2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.scroller {
+  overflow: hidden;
+  width: 100%;
+  min-width: 630px;
+  max-width: 630px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0.7rem;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+.scroller_inner {
+  display: inline-flex;
+  gap: 0.8rem;
+
+  animation: animateScroll var(--t) linear infinite;
+  filter: grayscale(0);
+}
+.scroller .reverseScroll {
+  animation: animateScroll2 var(--t) linear infinite;
+}
+.scroller_inner img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.scroller_inner li {
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: #3b3b3b;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.scrolling-text {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.scrolling-text .rail {
+  display: flex;
+}
+.scrolling-text .rail h4 {
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 1.8em;
+  color: rgb(255, 255, 255);
+  @apply text-[100px] lg:text-[160px];
+}
+
+.aboutContainer {
+  width: 100vw;
+  max-width: 100%;
+  height: 70vh;
+  background-color: #ffffff;
+  color: #fff;
+  @apply flex flex-wrap items-start justify-start lg:justify-between gap-12 md:gap-10 px-6 py-12 md:px-40 md:py-28;
+}
+.textEffectAbout div {
+  display: inline-flex;
+}
+
+.fadeToTopAnimation {
+  border-radius: 0%;
+  animation: scaleDownToTop 1.2s linear 1;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+@keyframes scaleDownToTop {
+  0% {
+    bottom: -100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+  20% {
+    bottom: 0%;
+  }
+  40% {
+    border-radius: 0%;
+  }
+  80% {
+    border-radius: 0%;
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+  }
+}
+
+.afterDiv::after {
+  position: absolute;
+  content: "View";
+  line-height: 85px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(63, 63, 250);
+  color: #fff;
+}
+.activeStatus {
+  position: relative;
+}
+.activeStatus::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  @apply animate-bounce;
+}
+.verticalText {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+.testForAni {
+  /* transform: perspective(80px) rotateX(0deg) rotateY(-12deg) rotateZ(0deg); */
+  box-shadow: -24px 16px 64px 0 rgba(0, 0, 0, 0.384);
+  @apply w-[50%] bg-yellow-500 p-12  transition-all duration-700;
+  /* animation: animate-3d 4s linear infinite; */
+}
+/* .testForAni:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.137);
+} */
+
+.rotateFor3d {
+  transform: perspective(290px) rotateX(0deg) rotateY(-12deg) rotateZ(0deg);
+}
+.rotateFor3dReverse {
+  transform: perspective(290px) rotateX(0deg) rotateY(12deg) rotateZ(0deg);
+}
+@keyframes animate-3d {
+  0%,
+  100% {
+    transform: perspective(80px) rotateX(0deg) rotateY(-12deg) rotateZ(0deg);
+    box-shadow: -24px 16px 64px 0 rgba(0, 0, 0, 0.384);
+  }
+  30% {
+    /* transform: perspective(100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); */
+    box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.137);
+  }
+}
+
+/* ============ * ============== */
+
+.styleContainer {
+  background: radial-gradient(rgba(0, 0, 0, 0.521) 10%, rgb(180, 255, 6) 90%);
+  background-position-x: 0;
+  filter: hue-rotate(0deg);
+  animation: size 5s infinite linear;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.3;
+  padding: 1rem;
+
+  mask-image: url("../public/textEff.png");
+  mask-size: contain;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  box-shadow: 24px 16px 64px 0 rgb(255, 255, 255);
+}
+@keyframes size {
+  to {
+    background-position-x: 100vw;
+    filter: hue-rotate(380deg);
+  }
+}
+
+.inputChecked:valid + .headingDiv {
+  color: #696969;
 }
