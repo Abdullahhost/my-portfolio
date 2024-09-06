@@ -17,7 +17,7 @@ const Footer = () => {
                             width={200}
                             height={200}
                             alt="Profile"
-                            src={"/my-pic.jpg"}
+                            src={"/portfolio.png"}
                         />
                     </div>
                     <div className="w-full">
@@ -33,7 +33,8 @@ const Footer = () => {
                     <hr className="w-2/4 ml-[50%] activeStatus" />
                     <div style={{ transform: "translateY(-50%)" }} className="absolute z-50 top-0 right-[0%]">
                         <Button background="#6065ff" content="Contact" rounded={true} widthHeight={135} />
-                    </div>
+                    </div>atus
+                    
                 </div>
 
                 <div className="flex gap-4 ml-0 lg:ml-[120px] translate-y-[0px] mt-[100px] md:mt-0 md:translate-y-[-50%]">

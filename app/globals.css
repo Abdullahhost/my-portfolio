@@ -25,10 +25,6 @@ body {
   scroll-behavior: smooth;
 }
 
-::selection {
-  background: #42fc3c;
-  mix-blend-mode: difference;
-}
 /* body,
 html {
   background: #2e2e2e;
@@ -352,4 +348,64 @@ html {
 
 .inputChecked:valid + .headingDiv {
   color: #696969;
+}
+.text-deasign {
+  transition: all ease-in 0.1s;
+  animation: swing 2s forwards infinite;
+  width: fit-content;
+  height: fit-content;
+}
+/* .text-deasign::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25%;
+  width: 160%;
+  transform: translateY(-25%);
+  border-radius: 50%;
+  height: 250%;
+  background: #efeff088;
+  box-shadow: 0px 0px 10px #000;
+  z-index: -1;
+} */
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: translateY(0px);
+    margin: 0px;
+    scale: 0.5;
+  }
+  10% {
+    scale: 1;
+    transform: translateY(-50px) rotate(0deg);
+    margin: 0px 5px;
+  }
+  20% {
+    scale: 1;
+    transform: translateY(-50px) rotate(45deg);
+    margin: 0px 5px;
+  }
+  30% {
+    scale: 1;
+    transform: translateY(-50px) rotate(-45deg);
+    margin: 0px 5px;
+  }
+  40% {
+    scale: 1;
+    transform: translateY(-50px) rotate(0deg);
+    margin: 0px 5px;
+  }
+
+  80% {
+    scale: 1.4;
+    transform: skewX(0deg);
+    margin: 0px 5px;
+  }
+}
+.customBorder {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
 }

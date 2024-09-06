@@ -37,8 +37,8 @@ const AboutSection = () => {
             }
         })
 
-        gsap.fromTo(".bannerImg", { translateY: -50 }, {
-            translateY: 150, delay: 0.1,
+        gsap.fromTo(".bannerImg", { translateY: 0 }, {
+            translateY: 200, delay: 0.1,
             ease: "power1.in",
             scrollTrigger: {
                 trigger: ".bannerImg",

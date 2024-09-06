@@ -66,12 +66,12 @@ const WorkSection = () => {
   }
 
   const testRemoveMove = () => {
-    gsap.to(circle.current!, { width: 0, height: 0 })
+    gsap.to(circle.current!, { width: 0, height: 0, scale: 0 })
 
   }
   const testMove = () => {
     let mm = gsap.matchMedia();
-    gsap.fromTo(circle.current!, { width: 0, height: 0 }, { width: 350, height: 300 })
+    gsap.fromTo(circle.current!, { width: 0, height: 0, scale: 0 }, { width: 350, height: 300, scale: 1 })
 
     mm.add("(min-width: 768px)", () => {
       gsap.fromTo(circle.current!, { width: 0, height: 0 }, { width: 350, height: 300 })

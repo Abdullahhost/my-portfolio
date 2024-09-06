@@ -12,16 +12,16 @@ import ScrollingText from './ScrollingText'
 const Banner = () => {
 
     return (
-        <div className="w-full bannerContainer relative flex justify-center items-baseline gap-0  ">
+        <div className="w-full pointer-events-none h-fit bannerContainer relative flex justify-center items-end gap-0  ">
 
-            <div className="imgBox overflow-hidden">
+            <div className="imgBox overflow-hidden scale-110 lg:scale-[1.30]">
                 <Image
-                    className="bannerImg select-none pointer-events-none w-[400px] h-[700px] overflow-hidden object-cover "
+                    className="bannerImg select-none pointer-events-none w-full h-[800px] overflow-hidden object-cover "
                     alt="profileImage"
-                    src={"/portfolio.png"}
-                    width={500}
-                    height={500}
-                    blurDataURL={"/team-3.jpg"}
+                    src={"/profileImg.png"}
+                    width={5000}
+                    height={5000}
+                    blurDataURL={"/profileImg.png"}
                 />
 
             </div>

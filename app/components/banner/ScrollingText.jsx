@@ -142,7 +142,7 @@ const ScrollingText = () => {
     }
   });
   return (
-    <div className="scrolling-text absolute bottom-10 lg:bottom-20 left-0">
+    <div className="scrolling-text absolute bottom-[140px] lg:bottom-[160px] left-0">
       <div className="rail select-none">
         <h4>&nbsp;Mamun Hossain — </h4>
         <h4>&nbsp;Mamun Hossain — </h4>

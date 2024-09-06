@@ -10,7 +10,7 @@ const Header = () => {
 
 
   return (
-    <div>
+    <div className="w-full h-screen">
       <div className="w-full p-4 flex justify-between  text-white">
         <Logo />
 

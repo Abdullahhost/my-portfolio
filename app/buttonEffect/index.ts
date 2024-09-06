@@ -5,8 +5,8 @@ export const handleMouseMove = (event: any, buttonRef: any, textRef: any) => {
 
     let x: any, y: any, tx: any, ty: any;
 
-    x = (event.clientX - position.left - position.width / 2) / 2.5;
-    y = (event.clientY - position.top - position.height / 2) / 2.5;
+    x = (event.clientX - position.left - position.width / 2) / 2.2;
+    y = (event.clientY - position.top - position.height / 2) / 2.2;
 
     tx = (event.clientX - position.left - position.width / 2) / 4;
     ty = (event.clientY - position.top - position.height / 2) / 4;
