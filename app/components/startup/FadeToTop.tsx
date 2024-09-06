@@ -30,7 +30,7 @@ const FadeToTop = () => {
     return (
         <div style={{ zIndex: "999" }}
             className="fadeToTopAnimation transition-all 
-                    fixed bottom-[-100%] left-[-25%] z-50 w-[150vw] h-screen
+                    fixed bottom-[-130%] left-[-25%] z-50 w-[150vw] h-screen
                   bg-black flex items-center justify-center" >
 
             <h3 className="animate-bounce text-5xl font-semibold text-white">
