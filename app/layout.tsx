@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap", weight: "400" });
 
 export const metadata: Metadata = {
   title: "Welcome - from Mamun Hossain",
-  description: "This website is creating in nextjs, typeScript, nodejs etc",
+  description: "This website is created with nextjs, typeScript, nodejs etc",
 };
 
 

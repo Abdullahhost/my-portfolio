@@ -141,7 +141,8 @@ const WorkSection = () => {
 
           const { PCategory, pLink, pName } = ele
 
-          return (<Link key={pName} href={pLink} onMouseEnter={() => handleMouseEnter(pName)} className="flex group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
+          return (<Link key={pName} href={pLink} onMouseEnter={() => handleMouseEnter(pName)} 
+          className="flex group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>
             <h3 className="text-sm md:text-lg">{PCategory}</h3>
           </Link>)

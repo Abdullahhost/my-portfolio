@@ -7,13 +7,14 @@ import { UserType } from "@/app/type"
 import { handleMouseMove, handleMouseOut } from "@/app/buttonEffect"
 import axios from "axios"
 
-
+import Skeleton from '@/app/components/skeleton'
 
 const Form = () => {
 
 
     const divRef = useRef<HTMLDivElement>(null)
     const textRef = useRef<HTMLSpanElement>(null);
+    const [loading, setLoading] = useState<Boolean>(false)
 
     const [userInfo, setUserInfo] = useState<UserType>({
         userName: "",
@@ -35,6 +36,7 @@ const Form = () => {
     const handleSubmit = async () => {
 
 
+        setLoading(true)
         if (userInfo.userEmail !== "" &&
             userInfo.userMessage !== "" &&
             userInfo.userOrganization !== "" &&
@@ -43,6 +45,8 @@ const Form = () => {
 
 
             await axios.post("https://mail-sending.onrender.com/sendMail", userInfo)
+
+
                 .then((data) => {
                     if (data.status === 200) {
                         alert("Message sent!")
@@ -52,7 +56,9 @@ const Form = () => {
 
                     }
                 })
-                .catch((err) => console.log(err));
+                .catch((err) => console.log(err)).finally(() => {
+                    setLoading(false)
+                });
 
             setUserInfo({
                 userEmail: "",
@@ -61,11 +67,17 @@ const Form = () => {
                 userOrganization: "",
             })
         } else {
-            alert("please Insert All Field!")
+            alert("please Insert All Field!");
+            setLoading(false)
         }
     }
     return (
         <div>
+            {loading && <div className="fixed top-0 left-0 backdrop-blur-sm w-full h-screen z-[1000]">
+
+                <Skeleton />
+            </div>
+            }
             <form>
 
                 <Input heading="What's Your Name?"

@@ -1,0 +1,31 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+}
+.loader span {
+  width: 18px;
+  height: 125px;
+  background: #fff;
+  margin: 0rem 0.3rem;
+  animation: loader 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  animation-delay: calc(0.1s * var(--x));
+  box-shadow: -5px 10px 20px #000;
+}
+
+@keyframes loader {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+    border-radius: 5px;
+  }
+  50% {
+    transform: scaleY(1);
+    border-radius: 10px;
+  }
+}

@@ -153,3 +153,46 @@ const ScrollingText = () => {
 };
 
 export default ScrollingText;
+// Hello Buddy!
+
+// I am Abdullah al mamun and a full Stack web developer. Are you looking for a professional web developer to bring your online vision to life? Whether you need a responsive website, a complex web application, or an eCommerce platform, I am here to help! with 3 years of experience in web development, I specialize in delivering high-quality, user-friendly, and scalable websites tailored to your needs.
+
+// Services Offered :
+
+// - Figma to Website Conversion
+
+// - Frontend development with React JS
+
+// - Backend development, with  Node JS for API creation
+
+// - Integrate API with secure fast and scalable systems
+
+// - Full stack solutions with next JS
+
+// - Website customization
+
+// - Fully responsive, mobile friendly and SEO optimized website
+
+// - Clean code and reusable component with Type Script
+
+// - Customer support to grow your Business
+
+// - 24/7 ongoing support
+
+// Let's turn your ideas into reality! hit on "Contact me" to discuss your project and bring your vision to life with a top-notch, custom-built web solution
+
+// What do I need to provide for the Figma to website conversion?
+// Simply share your Figma design files or URL and any specific requirements. I'll take care of the rest!
+
+// How can I request for revisions?
+// You can request for revisions through the platform's messaging system.
+
+// How do you ensure the security of my website?
+// I implement best practices for website security, including SSL certificates, secure coding practices and regular updates.
+
+// What if I need changes after the website is completed?
+// I offer unlimited revision services to make necessary changes even after the website is completed. so don't hesitate for revision.
+
+// Can you help me with branding and Logo design?
+// While my primary focus is on website development. I can collaborate with designers to help with branding and logo design.
+
