@@ -19,18 +19,18 @@ export const projectList: ProjectDetailsType = [
         pLink: "https://madrasah-app.vercel.app"
     },
     {
-        pName: 'Chat App',
-        pImage: "/chatProject.jpg",
-        backgroundLayout: "#F5DEB3",
-        PCategory: "Deasign & Develope",
-        pLink: "https://mern-chat-app-eta-two.vercel.app/chat"
-    },
-    {
         pName: 'Notes Ai App',
         pImage: "/aiProject.jpg",
         backgroundLayout: "#FFE4E1",
         PCategory: "Deasign & Develope",
         pLink: "https://notes-chatbot.vercel.app"
+    },
+    {
+        pName: 'Madrashah Admin',
+        pImage: "/madrashahAdmin.png",
+        backgroundLayout: "#F5DEB3",
+        PCategory: "Deasign & Develope",
+        pLink: "https://madrasah-app-admin.vercel.app/"
     },
     {
         pName: 'Weather App',
@@ -39,4 +39,27 @@ export const projectList: ProjectDetailsType = [
         PCategory: "Deasign & Develope",
         pLink: "https://weather-app-sand-xi.vercel.app"
     },
+    {
+        pName: 'Time Chelck',
+        pImage: "/timechelck.png",
+        backgroundLayout: "#555",
+        PCategory: "Deasign & Develope",
+        pLink: "https://world-time-one.vercel.app/"
+    },
+    {
+        pName: 'Tic-Tac-Toe',
+        pImage: "/tictactoe.png",
+        backgroundLayout: "#FFE7C7",
+        PCategory: "Deasign & Develope",
+        pLink: "https://tic-tac-toe-two-alpha-11.vercel.app/"
+    },
 ]
+
+
+// {
+//     pName: 'Chat App',
+//         pImage: "/chatProject.jpg",
+//             backgroundLayout: "#F5DEB3",
+//                 PCategory: "Deasign & Develope",
+//                     pLink: "https://mern-chat-app-eta-two.vercel.app/chat"
+// },
