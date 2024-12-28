@@ -10,8 +10,8 @@ const Header = () => {
 
 
   return (
-    <div className="w-full h-screen">
-      <div className="w-full p-4 flex justify-between  text-white">
+    <div className="w-full min-h-[110vh]">
+      <div className="w-full py-8 lg:p-4 flex justify-between  text-white">
         <Logo />
 
         <nav>

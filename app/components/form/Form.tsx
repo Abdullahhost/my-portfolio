@@ -20,7 +20,8 @@ const Form = () => {
         userName: "",
         userEmail: "",
         userMessage: "",
-        userOrganization: ""
+        userOrganization: "",
+        sendingEmail: false
 
     })
 
@@ -44,7 +45,7 @@ const Form = () => {
         ) {
 
 
-            await axios.post("https://mail-sending.onrender.com/sendMail", userInfo)
+                await axios.post("https://mail-sending.onrender.com/sendMail", userInfo)
 
 
                 .then((data) => {
@@ -104,6 +105,12 @@ const Form = () => {
                     number={4} placeholder="Hello Mamun. Can you help me with..."
                     userValue={userInfo.userMessage}
                     onChange={(e) => handleChange(e)} />
+
+                <div className="text-white flex justify-between items-center w-fit gap-4 mt-12">
+                    <input className="w-[40px] h-[40px]" onClick={(e) => setUserInfo({
+                        ...userInfo, sendingEmail: !userInfo.sendingEmail
+                    })} type="checkbox" />  <label htmlFor="ChelckBox">Got a project? Discuss our expert Team?</label>
+                </div>
 
 
 

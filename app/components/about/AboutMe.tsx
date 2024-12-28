@@ -14,10 +14,12 @@ const AboutMe = () => {
                     <span className="inline-block text-deasign text-[14vw] md:text-[9vw] lg:text-[5.9vw] text-[#3D42FB]">h</span>
                     <span>o</span>
                     <span>{" "}</span>
-                    <span>I</span>
+                    <span>w</span>
+                    <span>e</span>
                     <span>{" "}</span>
                     <span>a</span>
-                    <span>m</span>
+                    <span>r</span>
+                    <span>e</span>
                 </h2>
             </div>
             <div className="flex flex-wrap lg:flex-nowrap  gap-16 justify-between ">
@@ -57,7 +59,7 @@ const AboutMe = () => {
                 </div>
             </div>
 
-  
+
         </section>
     )
 }

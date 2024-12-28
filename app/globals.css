@@ -25,6 +25,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.bgGradient {
+  background-color: #8ec5fc;
+  /* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%); */
+  background-image: linear-gradient(62deg, #615e5e 0%, #050108 100%);
+}
 /* body,
 html {
   background: #2e2e2e;
@@ -409,3 +414,10 @@ html {
   top: 0;
   right: -20px;
 }
+
+/* 
+@media(hover: hover){
+  .testClass{
+    background: red;
+  }
+} */

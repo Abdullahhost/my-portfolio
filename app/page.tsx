@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Startup />
       <FadeToTop />
-      <header className="w-full bg-[#000]">
+      <header className="w-full bgGradient">
         <Header />
       </header>
 

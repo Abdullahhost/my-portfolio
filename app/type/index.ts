@@ -35,6 +35,7 @@ export type UserType = {
     userEmail: string;
     userOrganization: string;
     userMessage: string;
+    sendingEmail?: boolean;
 }
 
 

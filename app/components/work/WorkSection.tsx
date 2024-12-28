@@ -120,9 +120,9 @@ const WorkSection = () => {
 
   return (
     <div
-      className="px-0 bg-white py-6  md:px-6 lg:px-12 md:py-14">
+      className="px-0 bg-white py-6 md:px-0 lg:px-12 md:py-14">
 
-      <div ref={mainRef} className="workPreview bg-white px-0 py-12 md:px-20 md:py-14 h-fit relative" >
+      <div ref={mainRef} className="workPreview bg-white px-0 py-12 md:px-10 md:py-14 h-fit relative" >
 
         <div ref={circle} className="border overflow-hidden pointer-events-none z-50 fixed top-0 left-0 bg-neutral-500 w-0 h-0 flex items-center justify-center">
 
@@ -139,12 +139,29 @@ const WorkSection = () => {
 
         {projectList?.map((ele) => {
 
-          const { PCategory, pLink, pName } = ele
+          const { PCategory, pLink, pName, pImage } = ele
 
-          return (<Link key={pName} href={pLink} onMouseEnter={() => handleMouseEnter(pName)} 
-          className="flex group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>
-            <h3 className="text-sm md:text-lg">{PCategory}</h3>
+          return (<Link key={pName} href={pLink} onMouseEnter={() => handleMouseEnter(pName)}
+            className="flex testClass group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
+            <h2 className="hidden md:block text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>
+            <h3 className="hidden md:block text-sm md:text-lg">{PCategory}</h3>
+
+
+            <div className="md:hidden w-full flex gap-2 testClass group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
+              <div>
+
+                <h2 className="text-xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>
+                <h3 className="text-sm">{PCategory}</h3>
+              </div>
+              <div className="w-[40%]">
+                <Image
+                  width={500}
+                  height={500}
+                  alt={pImage}
+                  src={pImage}
+                />
+              </div>
+            </div>
           </Link>)
         })}
 
