@@ -8,6 +8,8 @@ import AboutSection from "./components/about/AboutSection";
 import WorkSection from "./components/work/WorkSection";
 import Footer from "./components/footer/Footer";
 import WhatWeDo from "./components/whatwedosection";
+import WhyChoseUs from "./components/whychoseus";
+import EmailSection from "./components/emailsection";
 
 export default function Home() {
   return (
@@ -22,7 +24,8 @@ export default function Home() {
         <WhatWeDo />
         {/* <SkillSection /> */}
         <AboutSection />
-
+        <WhyChoseUs />
+        <EmailSection />
         <WorkSection />
       </main>
 

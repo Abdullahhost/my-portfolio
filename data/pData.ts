@@ -26,33 +26,12 @@ export const projectList: ProjectDetailsType = [
         pLink: "https://notes-chatbot.vercel.app"
     },
     {
-        pName: 'Madrashah Admin',
-        pImage: "/madrashahAdmin.png",
-        backgroundLayout: "#F5DEB3",
-        PCategory: "Deasign & Develope",
-        pLink: "https://madrasah-app-admin.vercel.app/"
-    },
-    {
         pName: 'Weather App',
         pImage: "/weatherProject.jpg",
         backgroundLayout: "#C6C6C6",
         PCategory: "Deasign & Develope",
         pLink: "https://weather-app-sand-xi.vercel.app"
-    },
-    {
-        pName: 'Time Chelck',
-        pImage: "/timechelck.png",
-        backgroundLayout: "#555",
-        PCategory: "Deasign & Develope",
-        pLink: "https://world-time-one.vercel.app/"
-    },
-    {
-        pName: 'Tic-Tac-Toe',
-        pImage: "/tictactoe.png",
-        backgroundLayout: "#FFE7C7",
-        PCategory: "Deasign & Develope",
-        pLink: "https://tic-tac-toe-two-alpha-11.vercel.app/"
-    },
+    }
 ]
 
 
@@ -62,4 +41,28 @@ export const projectList: ProjectDetailsType = [
 //             backgroundLayout: "#F5DEB3",
 //                 PCategory: "Deasign & Develope",
 //                     pLink: "https://mern-chat-app-eta-two.vercel.app/chat"
+// },
+
+//     {
+// pName: 'Madrashah Admin',
+//     pImage: "/madrashahAdmin.png",
+//         backgroundLayout: "#F5DEB3",
+//             PCategory: "Deasign & Develope",
+//                 pLink: "https://madrasah-app-admin.vercel.app/"
+//     },
+
+// ,
+// {
+//     pName: 'Time Chelck',
+//     pImage: "/timechelck.png",
+//     backgroundLayout: "#555",
+//     PCategory: "Deasign & Develope",
+//     pLink: "https://world-time-one.vercel.app/"
+// },
+// {
+//     pName: 'Tic-Tac-Toe',
+//     pImage: "/tictactoe.png",
+//     backgroundLayout: "#FFE7C7",
+//     PCategory: "Deasign & Develope",
+//     pLink: "https://tic-tac-toe-two-alpha-11.vercel.app/"
 // },
