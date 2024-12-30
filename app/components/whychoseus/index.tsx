@@ -5,6 +5,9 @@ const WhyChoseUs = () => {
     return (
         <section className="w-full bg-white min-h-screen lg:h-screen flex items-center justify-center lg:justify-between flex-wrap-reverse md:flex-wrap-reverse lg:flex-nowrap">
             <div className='flex flex-col justify-center w-full lg:w-[50vw] h-full min-w-fit items-center  bg-white p-5'>
+
+
+                <h2 className='text-[5.3vw] md:text-[2.9vw]  lg:text-[2.4vw] font-bold uppercase my-6'>Why Chose Us</h2>
                 <div className='w-full px-0 lg:px-24'>
                     <div className='flex justify-start gap-4 items-center bg-slate-100 px-6 py-4 rounded my-2 border min-w-full'>
                         <Image
