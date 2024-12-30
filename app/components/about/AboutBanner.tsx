@@ -1,40 +1,19 @@
 
 
+
 const AboutBanner = () => {
     return (
-        <section
-            className="bg-white pb-10 pt-16 px-8 md:pt-28 md:pb-16 md:px-20 w-full h-fit min-h-[calc(100vh_-_96px)]
-                  lg:min-h-[calc(100vh_-_96px)] overflow-hidden flex justify-between
-                 flex-wrap lg:flex-nowrap lg:gap-0 gap-20">
-            <div className="relative w-full">
+        <section className=" relative w-full h-[85vh] px-4 md:px-8 flex items-center flex-col justify-center lg:justify-start text-white py-16 backgroundImage">
 
-                <div className="absolute top-[20%] left-[70px] w-28 h-[50vh]
-                bg-slate-800 backdrop-sepia rotateFor3d mix-blend-difference z-20"></div>
-
-                <div className="absolute top-[-20%] left-[220px] w-32 h-full animate-pulse
-                 bg-red-950 backdrop-sepia mix-blend-difference  rotateFor3dReverse z-20"></div>
-
-                <div className="absolute bottom-[50%] right-[50%] w-12 h-12 animate-ping
-              mix-blend-difference  bg-yellow-800"></div>
-
-                <h2 className="text-[7vw] lg:text-[5vw] xl:text-[4vw] underline 
-              underline-offset-4  leading-[5vh] md:leading-[7.5vh] lg:leading-[8.5vh]  
-              text-black font-bold h-full w-full lg:max-w-[65%] drop-shadow-lg ">
-
-                    👋! I help companies worldwide with bespoke solutions,<br /><br /> continually pushing the boundaries of quality with each project
-
-                </h2>
-            </div>
-            <div className="flex flex-col justify-end items-start gap-4 lg:gap-2 max-w-full 
-                md:max-w-[50%] lg:max-w-[20vw]">
-                <h2 className="text-6xl font-bold"> <small className=" text-xl lg:text-lg"> 2024</small ></h2>
-                <p>Hey, great to see you!. I'm a Full Stack Web Developer. Skilled in both front-end and back-end technologies, I deliver scalable, efficient, and high-quality web solutions. </p>
-            </div>
-
-
-
+            <h2 className="text-[9vw] backdrop-blur-lg my-4 lg:my-12 leading-[11vw] md:text-[5.2vw] md:leading-[6vw] lg:text-[4.2vw] lg:leading-[5.3vw] font-bold w-full lg:w-[65%]  text-slate-200 text-center">Your Technology Partner for a Digital Future</h2>
+            <h4 className="w-full text-center backdrop-blur-lg  lg:w-[70%] text-md md:text-xl lg:text-[1.5vw] lg:leading-[2.4vw]">Our mission is to empower businesses by delivering innovative software solutions that drive success. With a team of passionate developers and designers, we bring creativity, precision, and expertise to every project.
+            </h4><br />
+            <h3 className="w-full text-center backdrop-blur-lg  lg:w-[50%] text-md md:text-xl lg:text-[1.5vw] lg:leading-[2.4vw]">Whether you're looking to enhance operations, build a multi-tenant system, or launch a groundbreaking app, we're here to turn your vision into reality.</h3>
         </section>
     )
 }
 
 export default AboutBanner
+
+
+// https://diffco.us/about-us/

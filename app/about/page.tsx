@@ -11,6 +11,7 @@ import AboutBanner from "../components/about/AboutBanner"
 import AboutMe from "../components/about/AboutMe"
 import AboutMyServices from "../components/about/AboutMyServices"
 import { Metadata } from "next"
+import AboutValues from "../components/about/AboutValues"
 export const metadata: Metadata = {
   title: "About - Page",
   description: "I help companies worldwide with bespoke solutions, continually pushing the boundaries of quality with each project",
@@ -34,6 +35,7 @@ const About = () => {
               <ul className="hidden lg:flex items-center gap-10">
                 <MenuItem linkName={"Home"} />
                 <MenuItem linkName={"About"} />
+                <MenuItem linkName={"Project"} />
                 <MenuItem linkName={"Contact"} />
               </ul>
 
@@ -49,6 +51,7 @@ const About = () => {
 
       <main>
         <AboutBanner />
+        <AboutValues />
         <AboutMe />
         <AboutMyServices />
       </main>

@@ -32,7 +32,7 @@ body {
 }
 .controlLargeScreen {
   margin: 0 auto;
-  width: min(100% - 3rem, 185ch);
+  width: min(100% - 3rem, 170ch);
 }
 .bgGradient {
   background-color: #8ec5fc;
@@ -279,6 +279,21 @@ body {
   writing-mode: vertical-lr;
   text-orientation: mixed;
 }
+.backgroundImage {
+  z-index: 1;
+  background: url("/aboutBanner.jpg") center / cover;
+}
+.backgroundImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0009;
+  /* mask-image: linear-gradient(90deg, red, #1a1313 20%, #000000 80%, green); */
+  z-index: -1;
+}
 .testForAni {
   box-shadow: -24px 16px 64px 0 rgba(0, 0, 0, 0.384);
   @apply w-[50%] bg-yellow-500 p-12  transition-all duration-700;
@@ -303,6 +318,16 @@ body {
   30% {
     box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.137);
   }
+}
+.bgGradientForValueBox {
+  transition: all ease-in-out 0.5s;
+  /* background: linear-gradient(45deg, #000, lightblue); */
+}
+.bgGradientForValueBox:hover {
+  transition: all ease-in-out 0.5s;
+  /* background: linear-gradient(#000, lightblue); */
+  background: lightgreen;
+  color: #000;
 }
 
 /* ============ * ============== */

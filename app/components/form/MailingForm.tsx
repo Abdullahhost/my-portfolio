@@ -17,12 +17,6 @@ const MailingForm = () => {
                 />
 
                 <div className="text-white mt-20">
-                    <div className="relative group mb-10">
-                        <div className="absolute transition-all top-0 pointer-events-none mix-blend-darken group-hover:bg-[#0000] left-0 w-full h-full bg-[#00000085]">
-
-                        </div>
-                        <iframe className='' src="https://maps.google.com/maps?q=24.116151068726616, 89.96896248310726&hl=es&z=14&amp;output=embed" width="80%" height="250" allowFullScreen></iframe>
-                    </div>
                     <LinkBox />
                 </div>
 

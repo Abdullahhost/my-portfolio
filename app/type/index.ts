@@ -33,7 +33,6 @@ export type InputType = {
 export type UserType = {
     userName: string;
     userEmail: string;
-    userOrganization: string;
     userMessage: string;
     sendingEmail?: boolean;
 }

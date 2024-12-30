@@ -17,7 +17,7 @@ const Header = () => {
             <ul className="hidden lg:flex items-center gap-10 text-white">
               <MenuItem linkName={"Home"} />
               <MenuItem linkName={"About"} />
-              <MenuItem linkName={"Projects"} />
+              <MenuItem linkName={"Project"} />
               <MenuItem linkName={"Contact"} />
             </ul>
             <div className="block lg:hidden">

@@ -20,7 +20,6 @@ const Form = () => {
         userName: "",
         userEmail: "",
         userMessage: "",
-        userOrganization: "",
         sendingEmail: false
 
     })
@@ -40,12 +39,11 @@ const Form = () => {
         setLoading(true)
         if (userInfo.userEmail !== "" &&
             userInfo.userMessage !== "" &&
-            userInfo.userOrganization !== "" &&
             userInfo.userMessage !== ""
         ) {
 
 
-                await axios.post("https://mail-sending.onrender.com/sendMail", userInfo)
+            await axios.post("https://mail-sending.onrender.com/sendMail", userInfo)
 
 
                 .then((data) => {
@@ -64,8 +62,7 @@ const Form = () => {
             setUserInfo({
                 userEmail: "",
                 userMessage: "",
-                userName: "",
-                userOrganization: "",
+                userName: ""
             })
         } else {
             alert("please Insert All Field!");
@@ -93,14 +90,7 @@ const Form = () => {
                     userValue={userInfo.userEmail}
                     onChange={(e) => handleChange(e)}
                 />
-
-                <Input heading="What's the name of your organization?"
-                    name="userOrganization" type="input"
-                    number={3} placeholder="Jhon & doe"
-                    userValue={userInfo.userOrganization}
-                    onChange={(e) => handleChange(e)} />
-
-                <Input heading="Your message"
+                <Input heading="Project Details"
                     name="userMessage" textArea
                     number={4} placeholder="Hello Mamun. Can you help me with..."
                     userValue={userInfo.userMessage}
