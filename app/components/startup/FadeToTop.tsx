@@ -38,8 +38,6 @@ const FadeToTop = () => {
             </h3>
 
             {stickyNav && <>
-
-
                 <div className={`border transition-all hidden lg:block`}>
                     <ToggleBtn />
                     <menu>

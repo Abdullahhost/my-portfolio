@@ -23,7 +23,6 @@ export default function RootLayout({
 
     <html lang="en">
       <ThemeProvider>
-
         <body className={inter.className}>
           {children}
         </body>

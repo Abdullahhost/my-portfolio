@@ -33,7 +33,13 @@ const Button: React.FC<IPorps> = ({
   const divRef = useRef<HTMLAnchorElement>(null);
   const textRef = useRef<HTMLAnchorElement>(null)
 
+  const linkNameChelck = (linkname: string | undefined) => {
+    if (linkname === "Contact") return "Get in Touch";
+    if (linkname === "Projects") return "Discover Our Work";
 
+    return linkname;
+
+  }
 
 
   return (
@@ -52,7 +58,9 @@ const Button: React.FC<IPorps> = ({
              grid place-items-center w-full h-full p-[10px]  md:p-[20px]
               `}>
             <span style={{ fontSize: `${fontSize}px` }} ref={textRef} className={`inline-block relative z-40 pointer-events-none`}>
-              {content === "Contact" ? "Get in touch" : content}
+              {/* {content === "Contact" ? "Get in touch" : content} */}
+
+              {linkNameChelck(content)}
             </span>
           </button>
 

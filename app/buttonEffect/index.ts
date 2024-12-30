@@ -72,4 +72,3 @@ export const handleMouseOut = (event: any, buttonRef: any, textRef: any) => {
         }
     );
 }
-//     easing: "cubic-bezier(.7, -1.8, 0.5, 4.7)",

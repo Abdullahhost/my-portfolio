@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger)
 const AboutSection = () => {
 
     const aboutRef = useRef<HTMLHeadingElement>(null)
-    let text: string = "I’m a web developer dedicated to creating dynamic, user-friendly websites tailored to your unique business needs."
+    let text: string = "For over 6 years, DigiSkills.com, a premier digital agency, provides best-in-class web design, development, hosting, digital marketing, and managed services. With us, your success is our success, and we work with you to find powerful online solutions that fit your needs."
     let stringToArr = text.split(" ");
 
 

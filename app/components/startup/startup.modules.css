@@ -1,0 +1,29 @@
+.fadeToTopAnimation {
+  border-radius: 0%;
+  animation: scaleDownToTop 1.2s linear 1;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+@keyframes scaleDownToTop {
+  0% {
+    bottom: -100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+  20% {
+    bottom: 0%;
+  }
+  40% {
+    border-radius: 0%;
+  }
+  80% {
+    border-radius: 0%;
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+  }
+}
