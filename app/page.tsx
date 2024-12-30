@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Startup from "./components/startup/Startup";
 import FadeToTop from "./components/startup/FadeToTop";
 // import SkillSection from "./components/SkillSection/SkillSection";
-// import AboutSection from "./components/about/AboutSection";
+import AboutSection from "./components/about/AboutSection";
 import WorkSection from "./components/work/WorkSection";
 import Footer from "./components/footer/Footer";
 import WhatWeDo from "./components/whatwedosection";
@@ -21,7 +21,7 @@ export default function Home() {
       <main>
         <WhatWeDo />
         {/* <SkillSection /> */}
-        {/* <AboutSection /> */}
+        <AboutSection />
 
         <WorkSection />
       </main>

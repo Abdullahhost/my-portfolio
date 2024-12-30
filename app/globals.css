@@ -241,7 +241,7 @@ body {
   height: 70vh;
   background-color: #ffffff;
   color: #fff;
-  @apply flex flex-wrap items-start justify-start lg:justify-between gap-12 md:gap-10 px-6 py-12 md:px-40 md:py-28;
+  @apply flex flex-wrap items-start justify-start lg:justify-between gap-12 md:gap-10 px-6 pb-12 md:px-40 md:pb-28;
 }
 .textEffectAbout div {
   display: inline-flex;

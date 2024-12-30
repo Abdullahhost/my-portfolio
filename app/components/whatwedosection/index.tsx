@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const WhatWeDo = () => {
     return (
-        <section className="w-full bg-white py-24 flex flex-col items-center min-h-screen">
+        <section className="w-full bg-white py-24 flex flex-col items-center min-h-[80vh]">
             <h2 className="text-[5.3vw] md:text-[2.9vw]  lg:text-[2.4vw] font-bold uppercase mt-6">What We Do</h2>
 
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center p-16">
