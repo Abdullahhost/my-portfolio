@@ -1,6 +1,6 @@
 
-import CompanyTitle from "./CompanyTitle"
-import InfiniteProjectShow from "@/app/project/page"
+import InfiniteProjectShow from "../projectShowCase";
+import CompanyTitle from "./CompanyTitle";
 
 const Banner = () => {
     return (

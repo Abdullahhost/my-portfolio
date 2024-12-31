@@ -25,7 +25,7 @@ const ResponsiveBtn = () => {
                     zIndex: "1000"
                 }}
 
-                className={`fixed top-[-25%] w-full md:w-2/4 h-[150vh] 
+                className={`fixed top-[0%] lg:top-[-25%] w-full md:w-2/4 h-full lg:h-[150vh] 
                     bg-black shadow-2xl flex flex-col items-center justify-center
                      
                     ${state.toggleMenu === true ? "right-0  rounded-none" :
@@ -89,6 +89,13 @@ const ResponsiveBtn = () => {
                             <MenuItem fontSize={50} linkName={"About"} />
 
                             {path === "/about" && <>
+                                <span className="w-3 h-3 bg-white  rounded-full"></span>
+                            </>}
+                        </div>
+                        <div className="sideBarMenu w-full flex justify-between items-center">
+                            <MenuItem fontSize={50} linkName={"Project"} />
+
+                            {path === "/project" && <>
                                 <span className="w-3 h-3 bg-white  rounded-full"></span>
                             </>}
                         </div>

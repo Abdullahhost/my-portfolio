@@ -62,7 +62,7 @@ const AboutSection = () => {
                     <h2 className="text-[7vw] leading-[9vw] md:leading-[7vw] lg:leading-[5vw] md:text[3.6vw] lg:text-[4.4vw] mb-8 xl:w-3/4">Working to build your success</h2>
                     <span className="text-[16px] md:text[1.9vw] lg:text-[1.4vw]">For over 25 years, Americaneagle.com, a premier digital agency, provides best-in-class web design, development, hosting, digital marketing, and managed services. With us, your success is our success, and we work with you to find powerful online solutions that fit your needs.</span>
 
-                    <div className="my-8 posRightTo">
+                    <div className="my-8">
                         <Link href={"/about"}>
                             <button className="text-[18px]  hover:bg-white hover:text-black transition-all hover:ring-green-500 lg:text-xl font-bold ring-4 ring-red-500 rounded-lg p-4 ring-offset-4">About more</button>
                         </Link>
